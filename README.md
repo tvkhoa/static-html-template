@@ -1,15 +1,19 @@
+Quickly develop static HTML pages with nunjucks templating engine: https://mozilla.github.io/nunjucks/
+Support ES6
+Easy to config with gulp
+
 ### Dependencies
 `npm install`
 
 
 ### How to use
 #### HTML
-Using nunjucks templating engine: https://mozilla.github.io/nunjucks/
 
 ##### Layout
 Define in `app/templates/layout.nunjucks`
 
-`<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="en">
   <head>
     {% block meta %} {% endblock %}
@@ -24,14 +28,16 @@ Define in `app/templates/layout.nunjucks`
 
     {% block js %} {% endblock %}
   </body>
-</html>`
+</html>
+```
 
 
 #### Pages
 Your html pages will be defined in `app/pages`. 
 Example: Your `app/pages/index.html` will be compiled to `build/index.html`
 
-`{% set pageName = 'index' %}
+```
+{% set pageName = 'index' %}
 
 {% extends "layout.nunjucks" %}
 
@@ -54,7 +60,8 @@ Example: Your `app/pages/index.html` will be compiled to `build/index.html`
 
   {% import 'macros/content-macro.nunjucks' as content %}
   {{ content.render(data[pageName].items) }}
-{% endblock %}`
+{% endblock %}
+```
 
 #### Data
 Data defined in `app/data.json`. You can use your data in your pages.
@@ -73,9 +80,10 @@ Images put in `app/img`
 #### JS
 Support ES6, defined in `app/js/main`
 
-`const add = (a, b) => ( a + b);
-
-alert(add(1,2));`
+```
+const add = (a, b) => ( a + b);
+alert(add(1,2));
+```
 
 
 #### How to use
