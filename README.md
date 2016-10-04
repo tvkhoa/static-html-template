@@ -1,15 +1,17 @@
 Quickly develop static HTML pages with nunjucks templating engine: https://mozilla.github.io/nunjucks/
+
 Support ES6
+
 Easy to config with gulp
 
-### Dependencies
+## Dependencies
 `npm install`
 
 
-### How to use
-#### HTML
+## How to use
+### HTML
 
-##### Layout
+#### Layout
 Define in `app/templates/layout.nunjucks`
 
 ```
@@ -33,7 +35,8 @@ Define in `app/templates/layout.nunjucks`
 
 
 #### Pages
-Your html pages will be defined in `app/pages`. 
+Your html pages will be defined in `app/pages`.
+ 
 Example: Your `app/pages/index.html` will be compiled to `build/index.html`
 
 ```
@@ -71,13 +74,13 @@ Data defined in `app/data.json`. You can use your data in your pages.
 Macros and Partials defined in `app/templates`
 
 
-#### CSS
+### CSS
 CSS defined in `app/css`
 
-#### Images
+### Images
 Images put in `app/img`
 
-#### JS
+### JS
 Support ES6, defined in `app/js/main`
 
 ```
@@ -86,12 +89,12 @@ alert(add(1,2));
 ```
 
 
-#### How to use
+### How to use
 
-##### Watch files and build
+#### Watch files and build
 `npm run build:watch`
 
-##### Deploy http server
+#### Deploy http server
 `npm install http-server -g`
 
 `http-server -c-1`
