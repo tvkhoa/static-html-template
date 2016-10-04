@@ -1,0 +1,25 @@
+{
+  "name": "gulpWithNunjuck",
+  "version": "0.0.1",
+  "description": "Gulp with numjuckTemplate",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'app/js/main/**/*.js'",
+    "build": "gulp build",
+    "build:watch": "gulp buildWatch"
+  },
+  "author": "KT",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.16.0",
+    "eslint": "^3.7.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1"
+  }
+}

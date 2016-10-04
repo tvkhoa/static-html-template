@@ -1,0 +1,7 @@
+{% macro render(items) %}
+  <div>
+    {% for item in items %}
+      <p>{{item}}</p>
+    {% endfor %}
+  </div>
+{% endmacro %}

@@ -1,0 +1,21 @@
+{% macro basicMeta(meta) %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <link rel="alternate" hreflang="en" href="{{ meta.url }}" />
+  <title>{{ meta.title }}</title>
+
+  <script type="application/ld+json">
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "{{ meta.url }}", 
+      "name": "{{ meta.title }}",
+      "author": {
+        "@type": "Person",
+        "name": "Tickgame"
+      },
+      "description": "{{ meta.description }}",
+      "publisher": "Tickgame",
+    }
+  </script>
+{% endmacro %}

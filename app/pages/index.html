@@ -1,0 +1,29 @@
+{% set pageName = 'index' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block meta %} 
+  {% import 'macros/meta-macro.nunjucks' as meta %}
+  {{ meta.basicMeta(data[pageName].meta) }}
+{% endblock %}
+
+{% block js %}
+  <script src="js/main/alert.js"></script>
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="css/main.css">
+{% endblock %}
+
+
+{% block content %}
+  {% include 'partials/image.nunjucks' %}
+
+  {% import 'macros/content-macro.nunjucks' as content %}
+  {{ content.render(data[pageName].items) }}
+{% endblock %}
+
+
+
+
+

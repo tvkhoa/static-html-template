@@ -1,0 +1,17 @@
+{
+  "data": {
+    "index": {
+      "meta": {
+        "title": "Games for your life",
+        "type": "article",
+        "image": "http://www.tickgame.com/img/pagecover.jpg",
+        "url": "http://www.tickgame.com",
+        "description": "TickGame, games for your sake. Play games directly on your browser. For everyone, especially for Pokémon lovers.",
+        "author": "Tickgame",
+        "copyright": "Tickgame",
+        "application-name": "Tickgame"
+      },
+      "items": ["text 1", "text 2"]
+    }
+  }
+}

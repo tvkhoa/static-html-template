@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block meta %} {% endblock %}
+
+    {% block css %} {% endblock %}
+
+  </head>
+  <body>
+    <!-- You write code for this content block in another file -->
+
+    {% block content %} {% endblock %}
+
+    {% block js %} {% endblock %}
+  </body>
+</html>
